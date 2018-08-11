@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JValueMasker", "JValueMasker\JValueMasker.csproj", "{14A7EFA5-2CDD-4166-BCAE-CB644E88873B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JValueMasker", "JValueMasker\JValueMasker.csproj", "{14A7EFA5-2CDD-4166-BCAE-CB644E88873B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JValueMaskerTests", "JValueMaskerTests\JValueMaskerTests.csproj", "{92D03C16-1761-4C99-A5A8-D68AB9622059}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{14A7EFA5-2CDD-4166-BCAE-CB644E88873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14A7EFA5-2CDD-4166-BCAE-CB644E88873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14A7EFA5-2CDD-4166-BCAE-CB644E88873B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D03C16-1761-4C99-A5A8-D68AB9622059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D03C16-1761-4C99-A5A8-D68AB9622059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D03C16-1761-4C99-A5A8-D68AB9622059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D03C16-1761-4C99-A5A8-D68AB9622059}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,11 @@ namespace JValueMasker.Utilities
 {
     internal static class Masker
     {
+        internal const string DefaultMask = "***";
+
         public static JProperty Mask(JProperty jProperty, 
                                      List<string> propertiesToMask, 
-                                     string mask = "***")
+                                     string mask = DefaultMask)
         {
             var property = jProperty.Name;
             var value = jProperty.Value;
