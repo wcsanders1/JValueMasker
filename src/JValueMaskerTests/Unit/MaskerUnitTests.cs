@@ -23,7 +23,7 @@ namespace JValueMaskerTests.Unit
                 };
 
                 var jProp = new JProperty(passwordProp, passwordVal);
-                var result = Masker.Mask(jProp, propsToMask);
+                var result = Masker.MaskProperty(jProp, propsToMask);
 
                 Assert.NotNull(result);
                 Assert.IsType<JProperty>(result);
@@ -43,7 +43,7 @@ namespace JValueMaskerTests.Unit
                 };
 
                 var jProp = new JProperty(nameProp, nameVal);
-                var result = Masker.Mask(jProp, propsToMask);
+                var result = Masker.MaskProperty(jProp, propsToMask);
 
                 Assert.NotNull(result);
                 Assert.IsType<JProperty>(result);
