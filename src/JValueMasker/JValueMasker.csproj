@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard1.6;netstandard2.0;net45;net46</TargetFrameworks>
     <Authors>William Sanders</Authors>
     <Description>Masks values of specified properties in a JContainer.</Description>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <RepositoryUrl>https://github.com/wcsanders1/JValueMasker</RepositoryUrl>
     <PackageProjectUrl>https://github.com/wcsanders1/JValueMasker</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -12,6 +12,8 @@
     <PackageLicenseUrl>https://github.com/wcsanders1/JValueMasker/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Copyright (c) 2018 William Sanders</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Title>JValueMasker</Title>
+    <AssemblyVersion>0.1.3.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
