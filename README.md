@@ -25,34 +25,34 @@ The above code will print the following: `"password": "***"`
 Complex example:
 ``` cs
 var jObj = new JObject(
-                   new JProperty("name", "Bob"),
-                       new JProperty("something-neat", null),
-                       new JProperty(
-                           new JProperty("title", "War 'n Peace")),
-                       new JProperty(
-                           new JProperty(
-                               new JProperty("password", "badPassword"))),
-                       new JProperty("accountings", 
-                           new JArray(
-                               new JValue("password"),
-                                   new JValue(654645),
-                                   new JValue("good times"),
-                                   new JObject(
-                                       new JProperty("read less", 444),
-                                       new JProperty("password", 78789798.787),
-                                       new JProperty("meanderings", 
-                                           new JObject(
-                                           new JProperty("planets", 
-                                               new JArray(
-                                                   new JValue(
-                                                       new JValue(
-                                                           new JValue(true)))),
-                                                   new JValue("Mars"),
-                                                   new JValue("Venus"),
-                                                   new JValue("Rectus 9"),
-                                       new JObject(
-                                       new JProperty("temperature", "mild"),
-                                       new JProperty("PASSWORD", "GREAT-PASSWORD!!")))))))));
+                new JProperty("name", "Bob"),
+                    new JProperty("something-neat", null),
+                    new JProperty(
+                        new JProperty("title", "War 'n Peace")),
+                    new JProperty(
+                        new JProperty(
+                            new JProperty("password", "badPassword"))),
+                    new JProperty("accountings", 
+                        new JArray(
+                            new JValue("password"),
+                                new JValue(654645),
+                                new JValue("good times"),
+                                new JObject(
+                                    new JProperty("read less", 444),
+                                    new JProperty("password", 78789798.787),
+                                    new JProperty("meanderings", 
+                                        new JObject(
+                                        new JProperty("planets", 
+                                            new JArray(
+                                                new JValue(
+                                                    new JValue(
+                                                        new JValue(true)))),
+                                                new JValue("Mars"),
+                                                new JValue("Venus"),
+                                                new JValue("Rectus 9"),
+                                    new JObject(
+                                    new JProperty("temperature", "mild"),
+                                    new JProperty("PASSWORD", "GREAT-PASSWORD!!")))))))));
 
 var maskedResult = jObj.MaskValues(new List<string>{"password"});
 
