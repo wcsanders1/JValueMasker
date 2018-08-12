@@ -7,8 +7,12 @@ namespace JValueMasker.Extensions
 {
     public static class JContainerExtensions
     {
-        public static T MaskValues<T>(this T jContainer, List<string> propsToMask, 
+        public static T MaskValues<T>(this T jContainer, List<string> propsToMask,
+#if NETSTANDARD2_0
             StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase,
+#else
+            StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase,
+#endif
             string mask = MaskerUtility.DefaultMask) where T : JContainer
         {
             if (jContainer == null)

@@ -10,7 +10,11 @@ namespace JValueMasker.Utilities
         internal const string DefaultMask = "***";
 
         public static T Mask<T>(T jToken, List<string> propertiesToMask,
+#if NETSTANDARD2_0
             StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase,
+#else
+            StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase,
+#endif
             string mask = DefaultMask) where T : JToken
         {
             if (jToken == null)
@@ -39,8 +43,12 @@ namespace JValueMasker.Utilities
             return jToken;
         }
 
-        private static JProperty MaskProperty(JProperty jProperty, List<string> propertiesToMask, 
+        private static JProperty MaskProperty(JProperty jProperty, List<string> propertiesToMask,
+#if NETSTANDARD2_0
             StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase,
+#else
+            StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase,
+#endif
             string mask = DefaultMask)
         {
             var property = jProperty.Name;
@@ -77,7 +85,11 @@ namespace JValueMasker.Utilities
         }
 
         private static bool ShouldBeMasked(string propertyName, List<string> propertiesToMask,
+#if NETSTANDARD2_0
             StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase)
+#else
+            StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase)
+#endif
         {
             return propertiesToMask.Any(p => p.Equals(propertyName, stringComparison));
         }
