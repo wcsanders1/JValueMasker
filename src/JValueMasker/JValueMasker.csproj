@@ -4,11 +4,14 @@
     <TargetFrameworks>netstandard1.6;netstandard2.0;net45;net46</TargetFrameworks>
     <Authors>William Sanders</Authors>
     <Description>Masks values of specified properties in a JContainer.</Description>
-    <Version>0.1.0</Version>
+    <Version>0.1.2</Version>
     <RepositoryUrl>https://github.com/wcsanders1/JValueMasker</RepositoryUrl>
     <PackageProjectUrl>https://github.com/wcsanders1/JValueMasker</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>json JObject JArray JValue JContainer</PackageTags>
+    <PackageLicenseUrl>https://github.com/wcsanders1/JValueMasker/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright (c) 2018 William Sanders</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

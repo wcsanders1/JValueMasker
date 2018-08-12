@@ -2,6 +2,7 @@
 using JValueMasker.Utilities;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Xunit;
 
 namespace JValueMaskerTests.Unit
@@ -62,6 +63,9 @@ namespace JValueMaskerTests.Unit
                 Assert.IsType<JProperty>(result);
                 Assert.Equal(PasswordProp, result.Name);
                 Assert.Equal(MaskerUtility.DefaultMask, result.Value);
+
+
+                Debug.WriteLine(result.ToString());
             }
 
             [Fact]
