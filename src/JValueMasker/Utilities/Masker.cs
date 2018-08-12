@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace JValueMasker.Utilities
 {
@@ -7,7 +9,8 @@ namespace JValueMasker.Utilities
     {
         internal const string DefaultMask = "***";
 
-        public static T Mask<T>(T jToken, List<string> propertiesToMask)
+        public static T Mask<T>(T jToken, List<string> propertiesToMask,
+            StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase)
             where T : JToken
         {
             if (jToken == null)
@@ -36,13 +39,13 @@ namespace JValueMasker.Utilities
             return jToken;
         }
 
-        private static JProperty MaskProperty(JProperty jProperty, 
-                                     List<string> propertiesToMask, 
-                                     string mask = DefaultMask)
+        private static JProperty MaskProperty(JProperty jProperty, List<string> propertiesToMask, 
+            StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase,
+            string mask = DefaultMask)
         {
             var property = jProperty.Name;
             var value = jProperty.Value;
-            if (value is JValue && ShouldBeMasked(property, propertiesToMask))
+            if (value is JValue && ShouldBeMasked(property, propertiesToMask, stringComparison))
             {
                 return new JProperty(property, mask);
             }
@@ -53,10 +56,10 @@ namespace JValueMasker.Utilities
         private static JObject MaskObject(JObject jObject, List<string> propertiesToMask)
         {
             var maskedJObject = new JObject();
-            foreach (var j in jObject)
+            foreach (var obj in jObject)
             {
-                var prop = j.Value as JProperty;
-                maskedJObject.Add(j.Key, MaskProperty(prop, propertiesToMask));
+                var prop = new JProperty(obj.Key, obj.Value);
+                maskedJObject.Add(MaskProperty(prop, propertiesToMask));
             }
 
             return maskedJObject;
@@ -65,17 +68,18 @@ namespace JValueMasker.Utilities
         private static JArray MaskArray(JArray jArray, List<string> propertiesToMask)
         {
             var maskedJArray = new JArray();
-            foreach (var j in jArray)
+            foreach (var element in jArray)
             {
-                maskedJArray.Add(Mask(j, propertiesToMask));
+                maskedJArray.Add(Mask(element, propertiesToMask));
             }
 
             return maskedJArray;
         }
 
-        private static bool ShouldBeMasked(string propertyName, List<string> propertiesToMask)
+        private static bool ShouldBeMasked(string propertyName, List<string> propertiesToMask,
+            StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase)
         {
-            return propertiesToMask.Contains(propertyName);
+            return propertiesToMask.Any(p => p.Equals(propertyName, stringComparison));
         }
     }
 }
