@@ -151,6 +151,99 @@ namespace JValueMaskerTests.Unit
 
                 Debug.WriteLine(result.ToString());
             }
+
+            [Fact]
+            public void ProperlyMasksNonStringValues_WithString()
+            {
+                const string password = "badPassword";
+                const string teacherName = "Skinner";
+                const string teacherAddress = "123 Street Rd.";
+                const int teacherAge = 55;
+                const string student1Name = "Bob";
+                const string student2Name = "Sue";
+                const int student1Age = 7;
+                const int student2Age = 8;
+                const string student1Address = "555 Town Blvd.";
+                const string student2Address = "434 Rebel Yell Rd.";
+
+                var students = new List<Student>
+                {
+                    new Student
+                    {
+                        Name = student1Name,
+                        Age = student1Age,
+                        Password = password,
+                        Address = student1Address
+                    },
+                    new Student
+                    {
+                        Name = student2Name,
+                        Age = student2Age,
+                        Password = null,
+                        Address = student2Address
+                    }
+                };
+
+                var teacher = new Teacher
+                {
+                    Name = teacherName,
+                    Age = teacherAge,
+                    Password = password,
+                    Address = teacherAddress,
+                    Students = students
+                };
+
+                var propsToMask = new List<string>
+                {
+                    PasswordProp,
+                    "Age"
+                };
+
+                var jObj = JObject.FromObject(teacher);
+                var teacherResult = Masker.Mask(jObj, propsToMask);
+                var studentsResult = teacherResult[nameof(Teacher.Students)].ToObject<JArray>();
+
+                Assert.NotNull(teacherResult);
+                Assert.IsType<JObject>(teacherResult);
+                Assert.Equal(Masker.DefaultMask, teacherResult[nameof(Teacher.Age)].Value<string>());
+                Assert.Equal(students.Count, studentsResult.Count);
+                Assert.Equal(Masker.DefaultMask, studentsResult[0][nameof(Student.Age)]);
+                Assert.Equal(Masker.DefaultMask, studentsResult[1][nameof(Student.Age)]);
+                Assert.Equal(Masker.DefaultMask, studentsResult[0][nameof(Student.Password)]);
+                Assert.Equal(Masker.DefaultMask, studentsResult[1][nameof(Student.Password)]);
+
+                Debug.WriteLine(teacherResult.ToString());
+            }
+
+            [Fact]
+            public void MaskedAllMaskedProperties_InComplexJObject()
+            {
+                var testJObj = new JObject(new JProperty("name", "Bob"),
+                                           new JProperty("something-neat", null),
+                                           new JProperty(new JProperty("title", "War 'n Peace")),
+                                           new JProperty(new JProperty(new JProperty("password", "badPassword"))),
+                                           new JProperty("accountings", 
+                                                new JArray(new JValue("password"),
+                                                           new JValue(654645),
+                                                           new JValue("good times"),
+                                                           new JObject(
+                                                               new JProperty("read less", 444),
+                                                               new JProperty("password", 78789798.787),
+                                                               new JProperty("meanderings", new JObject(
+                                                                   new JProperty("planets", new JArray(
+                                                                       new JValue(new JValue(new JValue(true)))),
+                                                                       new JValue("Mars"),
+                                                                       new JValue("Venus"),
+                                                                       new JValue("Rectus 9"),
+                                                           new JObject(
+                                                           new JProperty("temperature", "mild"),
+                                                           new JProperty("PASSWORD", "GREAT-PASSWORD!!")))))))));
+
+                var result = Masker.Mask(testJObj, PropsToMask);
+
+                Debug.WriteLine(testJObj.ToString());
+                Debug.WriteLine(result.ToString());
+            }
         }
     }
 }
