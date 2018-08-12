@@ -5,13 +5,13 @@ using System.Linq;
 
 namespace JValueMasker.Utilities
 {
-    internal static class Masker
+    internal static class MaskerUtility
     {
         internal const string DefaultMask = "***";
 
         public static T Mask<T>(T jToken, List<string> propertiesToMask,
-            StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase)
-            where T : JToken
+            StringComparison stringComparison = StringComparison.InvariantCultureIgnoreCase,
+            string mask = DefaultMask) where T : JToken
         {
             if (jToken == null)
             {
@@ -33,7 +33,7 @@ namespace JValueMasker.Utilities
             if (jToken is JProperty)
             {
                 var prop = jToken as JProperty;
-                return MaskProperty(prop, propertiesToMask) as T;
+                return MaskProperty(prop, propertiesToMask, stringComparison, mask) as T;
             }
 
             return jToken;
