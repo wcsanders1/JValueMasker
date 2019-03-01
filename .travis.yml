@@ -2,9 +2,6 @@ language: csharp
 mono: 5.18.0
 dotnet: 2.1.502
 
-install:
-  - dotnet restore ./src/JValueMasker.sln
-
 script:
-  - dotnet build ./src/JValueMasker.sln
   - dotnet test ./src/JValueMaskerTests/JValueMaskerTests.csproj
+  - msbuild /p:Configuation=Release ./src/JValueMasker.sln
