@@ -1,5 +1,4 @@
 language: csharp
-# mono: 5.18.0
 dotnet: 2.1.502
 
 install:
@@ -7,7 +6,6 @@ install:
 
 script:
   - dotnet test /p:CollectCoverage=true ./src/JValueMaskerTests/JValueMaskerTests.csproj
-  # - msbuild /p:Configuation=Release ./src/JValueMasker.sln
 
 after_script:
   - bash <(curl -s https://codecov.io/bash)
