@@ -4,7 +4,14 @@ dotnet: 2.1.502
 
 install:
   - nuget restore ./src/JValueMasker.sln
+  - choco install dotnetcore-sdk
+  - choco install opencover.portable
+  - choco install codecov
 
 script:
   - dotnet test ./src/JValueMaskerTests/JValueMaskerTests.csproj
   - msbuild /p:Configuation=Release ./src/JValueMasker.sln
+
+after_script:
+  - OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\JValueMaskerTests\bin\Debug\JValueMaskerTests.dll -noshadow" -filter:"+[JValueMaskerTests*]* -[JValueMaskerTests*]*" -output:".\JValueMasker_coverage.xml" -oldstyle
+  - codecov -f "JValueMasker_coverage.xml"
