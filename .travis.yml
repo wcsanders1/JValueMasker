@@ -3,10 +3,10 @@ dotnet: 2.1.502
 mono: none
 
 script:
-  # - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
-  - nuget install opencover
-  - nuget install xunit
-  - OpenCover.Console.exe -register:user -target:"xunit.console.x86.exe" -targetargs:".\JValueMaskerTests\bin\Debug\JValueMaskerTests.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\JValueMaskerTests_coverage.xml"
+  - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
+  # - nuget install opencover
+  # - nuget install xunit
+  # - OpenCover.Console.exe -register:user -target:"xunit.console.x86.exe" -targetargs:".\JValueMaskerTests\bin\Debug\JValueMaskerTests.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\JValueMaskerTests_coverage.xml"
 
 after_script:
   - bash <(curl -s https://codecov.io/bash)
