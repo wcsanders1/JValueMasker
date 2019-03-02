@@ -2,9 +2,6 @@ language: csharp
 dotnet: 2.1.502
 mono: none
 
-install:
-  - nuget restore ./src/JValueMasker.sln
-
 script:
   - dotnet test /p:CollectCoverage=true ./src/JValueMaskerTests/JValueMaskerTests.csproj
 
