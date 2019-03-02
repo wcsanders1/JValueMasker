@@ -1,5 +1,6 @@
 language: csharp
 dotnet: 2.1.502
+mono: none
 
 install:
   - nuget restore ./src/JValueMasker.sln
