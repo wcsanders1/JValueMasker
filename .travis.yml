@@ -7,3 +7,4 @@ script:
 
 after_script:
   - bash <(curl -s https://codecov.io/bash)
+  - bash <(cat ./src/JValueMaskerTests/coverage.json)
