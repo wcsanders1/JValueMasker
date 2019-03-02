@@ -3,7 +3,7 @@ dotnet: 2.1.502
 mono: none
 
 script:
-  - dotnet test /p:CollectCoverage=true ./src/JValueMaskerTests/JValueMaskerTests.csproj
+  - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
 
 after_script:
   - bash <(curl -s https://codecov.io/bash)
