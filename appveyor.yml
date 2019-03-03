@@ -1,15 +1,38 @@
-image: Visual Studio 2017
+version: 0.1.6.{build}
 
-version: 0.1.5.{build}
+branches:
+  only:
+    - master
+
+image: Visual Studio 2017
 
 before_build:
   - dotnet tool install -g coveralls.net --version 1.0.0
   - nuget restore ./src
 
+nuget:
+  account_feed: true
+  project_feed: true
+
+# build:
+#   project: ./src/JValueMasker.sln
+#   verbosity: minimal
+
 build:
-  project: ./src/JValueMasker.sln
-  verbosity: minimal
+  publish_nuget: true
+  verbosity: detailed
 
 test_script:
   - dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
   - csmacnz.coveralls --opencover --useRelativePaths -i C:\projects\jvaluemasker\src\JValueMaskerTests\coverage.opencover.xml
+
+artifacts:
+  - path: '**\*.nupkg'
+
+deploy:
+  provider: NuGet
+  server: https://ci.appveyor.com/nuget/jvaluemasker-h4g35nplx8xq
+  api_key:
+    secure: y7oTr+nVuJq2E0/XA55miCINkkylDiu4LuHJOgc5Z0s=
+  skip_symbols: true
+  artifact: JValueMasker.0.1.6.nupkg

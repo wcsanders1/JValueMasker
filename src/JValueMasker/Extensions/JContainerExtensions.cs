@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace JValueMasker.Extensions
 {
+    /// <summary>
+    /// Contains extension methods for JContainer
+    /// </summary>
     public static class JContainerExtensions
     {
         /// <summary>
