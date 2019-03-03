@@ -8,7 +8,6 @@ install:
 script:
   - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
   # - nuget install opencover
-  # - nuget install xunit
   # - OpenCover.Console.exe -register:user -target:"xunit.console.x86.exe" -targetargs:".\JValueMaskerTests\bin\Debug\JValueMaskerTests.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\JValueMaskerTests_coverage.xml"
 
 after_script:
