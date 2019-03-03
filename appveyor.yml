@@ -3,8 +3,8 @@ image: Visual Studio 2017
 before_build:
   - dotnet tool install -g coveralls.net --version 1.0.0
   - nuget restore ./src
-  - choco install opencover.portable
-  - choco install codecov
+  # - choco install opencover.portable
+  # - choco install codecov
 
 build:
   project: ./src/JValueMasker.sln
@@ -13,6 +13,6 @@ build:
 test_script:
   # - OpenCover.Console.exe -register:user -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:".\src\JValueMaskerTests\bin\Debug\netcoreapp2.1\JValueMaskerTests.dll" -filter:"+[*]* -[*Tests]*" -output:".\JValueMaskerTests_coverage.xml"
   - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
-  - csmacnz.coveralls --useRelativePaths
+  - csmacnz.coveralls --useRelativePaths --chutzpah -i .\src\JValueMaskerTests\coverage.json --repoToken $env:COVERALL
   # - cat ./src/JValueMaskerTests/coverage.json
   # - codecov -f ./src/JValueMaskerTests/coverage.json
