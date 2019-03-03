@@ -15,6 +15,7 @@
     <Title>JValueMasker</Title>
     <AssemblyVersion>0.1.5.0</AssemblyVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/wcsanders1/JValueMasker/logo/logo.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.6|AnyCPU'">

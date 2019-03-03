@@ -1,5 +1,7 @@
 image: Visual Studio 2017
 
+version: 0.1.5.{build}
+
 before_build:
   - dotnet tool install -g coveralls.net --version 1.0.0
   - nuget restore ./src
