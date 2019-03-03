@@ -14,10 +14,6 @@ nuget:
   account_feed: true
   project_feed: true
 
-# build:
-#   project: ./src/JValueMasker.sln
-#   verbosity: minimal
-
 build:
   publish_nuget: true
   verbosity: minimal
