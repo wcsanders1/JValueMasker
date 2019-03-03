@@ -12,4 +12,5 @@ build:
 test_script:
   # - OpenCover.Console.exe -register:user -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:".\src\JValueMaskerTests\bin\Debug\netcoreapp2.1\JValueMaskerTests.dll" -filter:"+[*]* -[*Tests]*" -output:".\JValueMaskerTests_coverage.xml"
   - dotnet test /p:CollectCoverage=true /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
-  - codecov -f "./src/JValueMaskerTests/coverage.json
+  - cat ./src/JValueMaskerTests/coverage.json
+  - codecov -f ./src/JValueMaskerTests/coverage.json
