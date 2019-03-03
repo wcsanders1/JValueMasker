@@ -27,21 +27,18 @@ namespace JValueMasker.Utilities
                 return jToken;
             }
 
-            if (jToken is JObject)
+            if (jToken is JObject obj)
             {
-                var obj = jToken as JObject;
                 return MaskObject(obj, propertiesToMask) as T;
             }
 
-            if (jToken is JArray)
+            if (jToken is JArray arr)
             {
-                var arr = jToken as JArray;
                 return MaskArray(arr, propertiesToMask) as T;
             }
 
-            if (jToken is JProperty)
+            if (jToken is JProperty prop)
             {
-                var prop = jToken as JProperty;
                 return MaskProperty(prop, propertiesToMask, stringComparison, mask) as T;
             }
 
