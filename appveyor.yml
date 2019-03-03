@@ -20,7 +20,7 @@ nuget:
 
 build:
   publish_nuget: true
-  verbosity: detailed
+  verbosity: minimal
 
 test_script:
   - dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
@@ -31,8 +31,8 @@ artifacts:
 
 deploy:
   provider: NuGet
-  server: https://ci.appveyor.com/nuget/jvaluemasker-h4g35nplx8xq
+  server:
   api_key:
-    secure: y7oTr+nVuJq2E0/XA55miCINkkylDiu4LuHJOgc5Z0s=
+    secure: hp46mSR3sfuUE4ICs+zWj3NHqXU840yF6tlT+iyezgj7jSUxwhIYh1XHdhCN1rhP
   skip_symbols: true
-  artifact: JValueMasker.0.1.6.nupkg
+  artifact: /.*\.nupkg/
