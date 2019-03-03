@@ -1,5 +1,7 @@
 # JValueMasker
 
+[![Build status](https://ci.appveyor.com/api/projects/status/1t90oa7mbj5cq33a?svg=true)](https://ci.appveyor.com/project/wcsanders1/jvaluemasker) [![Coverage Status](https://coveralls.io/repos/github/wcsanders1/JValueMasker/badge.svg?branch=master)](https://coveralls.io/github/wcsanders1/JValueMasker?branch=master)
+
 A library offering an extension method on `JContainer` to mask values of elements with specified properties.
 This can be useful when you want to log a `JContainer` containing sensitive information, such as passwords.
 

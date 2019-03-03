@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.7.922.0">
+  <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="0C-74-62-1F-24-D5-40-32-2F-3F-93-7C-CA-EC-14-28-0A-16-79-84">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Private.CoreLib.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Private.CoreLib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="D8-91-98-9B-31-39-34-58-F9-F9-C3-B9-FB-74-14-0E-33-25-F1-89">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\dotnet.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:54:06Z</ModuleTime>
+      <ModuleName>dotnet</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C6-E8-74-BE-A5-07-72-7B-EC-10-66-1B-74-C8-0F-8E-89-9F-F9-FB">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Runtime</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="D7-A5-C8-B0-53-0F-99-A1-74-5A-ED-58-F7-80-33-0B-48-93-A0-72">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.DotNet.Cli.Utils.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:08Z</ModuleTime>
+      <ModuleName>Microsoft.DotNet.Cli.Utils</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B3-64-EC-D7-46-47-E4-88-03-E9-74-68-30-94-E2-49-D6-5E-CD-7B">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.Extensions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.Extensions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5D-5E-DC-71-E3-8A-20-96-4D-6D-28-8E-5A-87-03-F7-F3-DB-FF-5A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.Loader.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.Loader</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="57-67-EF-84-80-ED-73-71-33-3B-F8-A6-B9-69-72-EC-0A-E2-F9-89">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.DotNet.PlatformAbstractions.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:12Z</ModuleTime>
+      <ModuleName>Microsoft.DotNet.PlatformAbstractions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A2-07-C5-F2-94-B7-BC-2B-03-7F-78-37-37-25-ED-1D-23-D4-EE-21">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.InteropServices.RuntimeInformation.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.InteropServices.RuntimeInformation</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="11-54-AB-34-4F-06-FC-8E-25-8E-6B-FD-7D-7F-D3-9E-2E-2F-2C-F1">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.InteropServices.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.InteropServices</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C4-13-89-FC-43-A3-8D-EC-7E-8B-63-A8-EA-6B-38-4A-29-46-D2-09">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CF-35-24-0C-BE-CC-AC-91-C7-B5-F1-4F-19-FA-28-22-6E-CF-F2-D8">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.IO.FileSystem.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.IO.FileSystem</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="86-C2-C0-AC-0D-18-39-A6-27-59-AB-87-5C-B6-96-6B-B2-96-40-EE">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:54:02Z</ModuleTime>
+      <ModuleName>System.Text.Encoding.CodePages</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="66-5F-55-7A-03-AF-5F-87-75-E2-B0-DD-F8-E3-83-0D-8F-10-DC-1A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Collections.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Collections</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="00-C3-37-25-5B-0C-A8-2D-EA-9C-ED-F4-C9-89-88-41-A7-41-87-58">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Collections.Concurrent.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Collections.Concurrent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9E-44-56-45-E8-E7-04-33-8B-7D-0E-6D-BF-C3-24-6A-00-DF-4C-B3">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.Thread.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.Thread</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="9C-DF-11-3E-F5-43-13-7C-47-68-4F-9A-1E-9D-BC-35-18-B3-3D-9B">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.DotNet.Configurer.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:55:42Z</ModuleTime>
+      <ModuleName>Microsoft.DotNet.Configurer</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F8-CE-C0-89-BF-C0-6E-56-58-CA-EA-FA-A3-F3-42-2F-23-4D-C5-FB">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.DotNet.Cli.CommandLine.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:08Z</ModuleTime>
+      <ModuleName>Microsoft.DotNet.Cli.CommandLine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="42-E5-AF-53-A7-06-AC-6B-F2-CA-91-E3-BF-5B-F5-73-62-9E-6E-CF">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.Process.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.Process</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F2-2A-7A-55-40-29-50-79-2D-2B-DE-ED-1A-38-DA-73-F8-50-EA-C0">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.DotNet.InternalAbstractions.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:10Z</ModuleTime>
+      <ModuleName>Microsoft.DotNet.InternalAbstractions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="39-63-51-E2-F5-13-BE-B5-80-5A-23-FD-5F-11-CF-B7-11-1D-1A-1F">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Linq.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="66-AD-31-35-F9-22-4C-45-49-EC-B2-77-63-81-E8-B9-67-87-20-C4">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\NuGet.Frameworks.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:57:06Z</ModuleTime>
+      <ModuleName>NuGet.Frameworks</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="67-81-8C-54-98-D3-09-E0-2F-B9-71-C4-BD-3F-70-D4-04-49-41-04">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\netstandard.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>netstandard</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="53-9D-74-D4-0E-2D-5E-BA-67-57-1D-7C-CC-9D-28-EC-B8-C4-39-52">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Console.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="44-40-A9-34-B3-34-E4-A5-E3-F1-3C-E3-1D-FE-1F-22-62-72-1A-3F">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.IO.FileSystem.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.IO.FileSystem.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="91-95-87-45-21-3A-58-EA-F7-ED-BF-51-99-BD-08-80-4F-BF-74-5A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Memory.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Memory</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="45-E4-34-12-59-24-82-F8-6C-B8-29-F0-5D-E1-90-59-F0-D7-94-36">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.IO.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.IO</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F4-A9-21-6F-08-0A-C0-BB-5D-69-35-42-E2-D9-8A-37-20-4B-FB-6E">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Text.Encoding.Extensions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Text.Encoding.Extensions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="19-09-89-F1-26-3B-89-6C-AE-C6-E1-FF-50-53-7A-EF-54-24-AA-3B">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.ApplicationInsights.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:04Z</ModuleTime>
+      <ModuleName>Microsoft.ApplicationInsights</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="43-71-C3-DB-DE-E4-85-B9-1F-96-F5-18-53-FB-4D-ED-22-60-6A-50">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Reflection.Extensions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Reflection.Extensions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E3-CF-E0-E7-20-91-34-53-4E-2E-E0-8E-D6-5F-E8-B8-16-D3-BF-34">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Cryptography.Algorithms.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Cryptography.Algorithms</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DD-11-5B-10-75-9C-82-FE-B8-98-2D-86-F4-D5-2F-C7-FB-00-EA-66">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Reflection.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Reflection</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2F-B8-9D-46-75-BC-BE-2C-F4-82-27-EA-6B-CE-92-F7-F3-48-B0-66">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Cryptography.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Cryptography.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="3E-C5-79-9D-58-C8-E5-A1-E0-86-A2-79-8C-BD-8D-7F-23-40-27-C3">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Xml.XDocument.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Xml.XDocument</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="28-87-88-AB-D7-78-6F-17-7B-85-03-D6-42-4F-6D-B9-08-83-50-14">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Private.Xml.Linq.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Private.Xml.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="AE-75-0F-0B-3B-9D-74-6E-CA-A7-18-A4-0C-24-E9-E4-06-61-20-92">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.TemplateEngine.Cli.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:16Z</ModuleTime>
+      <ModuleName>Microsoft.TemplateEngine.Cli</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="47-3C-15-EF-D4-4B-47-B4-F1-27-E2-1D-4A-DE-33-73-67-EA-AD-C0">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Resources.ResourceManager.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Resources.ResourceManager</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="92-B6-AA-C9-FD-8E-B5-7F-F2-3B-97-B0-17-82-44-5B-7D-C6-E1-FE">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Globalization.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Globalization</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B9-65-68-81-5F-7B-6A-F6-57-67-39-08-13-C8-96-48-14-62-1D-CE">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Private.Xml.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Private.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="42-97-51-47-58-77-EC-55-DD-A5-E5-72-9F-44-14-5A-96-35-61-84">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Text.RegularExpressions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Text.RegularExpressions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8E-C4-30-A6-D9-9D-A8-B5-FF-0D-B3-E4-33-D7-B7-48-C6-3E-73-A9">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Xml.ReaderWriter.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Xml.ReaderWriter</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="3B-BE-7F-8C-27-95-5B-FE-27-4D-70-A2-7B-4A-22-CE-D3-E0-87-31">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.Tracing.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.Tracing</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1E-98-A7-5C-A7-22-D9-0E-26-A9-6C-FE-BC-33-F7-AE-70-5B-55-63">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Private.Uri.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Private.Uri</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2B-53-10-D2-65-FD-7E-8B-57-95-AE-31-DE-E3-0F-09-9B-F6-F1-0B">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.Tasks.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.Tasks</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E0-5F-1F-7C-6B-56-2F-49-DA-7F-E3-12-EF-A2-69-33-2D-D0-27-91">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Buffers.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Buffers</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AA-49-A2-92-45-5C-5D-EF-50-70-79-CF-05-78-E1-23-4A-BC-87-0E">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Reflection.Emit.ILGeneration.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Reflection.Emit.ILGeneration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1F-52-4A-26-4C-55-A3-55-54-31-D9-52-2D-19-98-55-C2-5B-20-C8">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Reflection.Emit.Lightweight.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Reflection.Emit.Lightweight</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C2-33-8D-E3-D8-59-69-7E-E4-1E-EE-08-78-21-B1-95-8E-E0-8B-B8">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Reflection.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Reflection.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="E7-79-72-D1-91-83-EF-97-FF-C1-01-B5-8B-81-96-15-25-3E-ED-17">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.TemplateEngine.Utils.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:06Z</ModuleTime>
+      <ModuleName>Microsoft.TemplateEngine.Utils</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="9F-70-8F-07-19-6D-CF-B8-AD-20-49-80-75-25-7F-80-54-31-34-49">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\Microsoft.Win32.Registry.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>Microsoft.Win32.Registry</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="81-2D-B1-DA-2F-A7-71-E3-86-FF-5E-5D-B5-A2-8A-4C-65-12-BD-73">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.Tools.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.Tools</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A4-BE-42-92-DB-90-42-A5-72-61-3F-7D-D4-B4-C1-BA-56-E9-91-53">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.Debug.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.Debug</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F0-25-43-EA-C4-87-51-2F-51-E6-11-22-AE-11-1F-7B-19-5B-A0-CE">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Text.Encoding.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Text.Encoding</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9F-CC-E7-25-B5-09-D0-9E-20-AF-F4-84-2E-27-93-3D-C0-82-18-1C">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.IO.Compression.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.IO.Compression</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A8-23-1D-0B-28-A0-A6-14-E1-D8-89-63-63-8E-1A-56-B3-74-53-62">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.Http.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="0E-2D-AB-9E-A4-7C-1A-CA-36-58-B8-C5-26-4F-BC-EA-F2-00-12-CC">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.Build.Framework.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:08Z</ModuleTime>
+      <ModuleName>Microsoft.Build.Framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="61-8B-1A-DA-BC-21-DF-E0-70-E5-B2-67-A6-7A-B7-B6-22-3E-A5-87">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6C-31-5E-D7-DC-FD-1E-C3-5A-CC-58-DA-EB-00-D4-78-BD-64-61-CD">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.Security.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.Security</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E0-0E-19-9B-56-0B-65-82-32-29-A5-B5-2C-56-CB-95-B2-84-68-26">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Cryptography.X509Certificates.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Cryptography.X509Certificates</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-A1-9C-96-64-88-FA-FE-33-5F-D7-EC-C4-20-49-54-10-1A-6C-AB">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.ComponentModel.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.ComponentModel.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="64-04-8A-4B-D6-CE-85-F5-9A-0E-DE-40-36-09-6D-D9-1E-83-88-43">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\Microsoft.Win32.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>Microsoft.Win32.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="17-6A-63-E5-BB-27-80-A5-E4-47-94-E2-CC-43-58-7A-88-7D-DC-81">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.DiagnosticSource.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.DiagnosticSource</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="16-19-6C-95-88-C3-95-B6-97-27-F8-37-E4-72-8E-5B-2C-FA-B5-E8">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Collections.NonGeneric.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Collections.NonGeneric</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D2-92-47-8F-CD-F5-F9-51-81-9F-69-BA-68-E2-44-0B-7D-47-4A-CE">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.Timer.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.Timer</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="32-0C-D7-B5-C2-2E-4F-74-7E-EC-49-E7-0D-74-0E-3E-1C-76-37-D4">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.NetworkInformation.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.NetworkInformation</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="00-D6-F7-47-6F-73-A6-CD-D4-F5-FE-F7-1F-A2-81-3B-55-05-D7-F5">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.Sockets.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.Sockets</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="4B-E9-BE-77-25-DB-C0-D7-52-96-99-08-B5-40-93-33-D0-40-44-61">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.Overlapped.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.Overlapped</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DD-56-F4-3E-EC-E3-BF-5D-32-A2-99-6B-79-7B-06-05-DF-58-F7-9A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Net.NameResolution.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Net.NameResolution</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="0C-74-62-1F-24-D5-40-32-2F-3F-93-7C-CA-EC-14-28-0A-16-79-84">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Private.CoreLib.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Private.CoreLib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DB-6A-12-58-6F-32-09-77-4E-B5-09-EC-69-C9-BA-11-ED-44-77-66">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Principal.Windows.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Principal.Windows</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="10-14-B2-75-8B-59-15-A5-DB-43-2E-D3-58-E4-68-31-C4-65-26-7C">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Claims.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Claims</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="59-FA-3A-78-EF-34-ED-15-CD-2E-81-03-99-58-B7-E5-03-E9-8B-EF">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Principal.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Principal</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F0-CE-BB-56-15-37-E4-AA-7B-6A-07-27-C7-36-F2-E9-3C-F1-07-EE">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\MSBuild.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:58:36Z</ModuleTime>
+      <ModuleName>MSBuild</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C6-E8-74-BE-A5-07-72-7B-EC-10-66-1B-74-C8-0F-8E-89-9F-F9-FB">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Runtime</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B3-64-EC-D7-46-47-E4-88-03-E9-74-68-30-94-E2-49-D6-5E-CD-7B">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.Extensions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.Extensions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C4-13-89-FC-43-A3-8D-EC-7E-8B-63-A8-EA-6B-38-4A-29-46-D2-09">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2B-53-10-D2-65-FD-7E-8B-57-95-AE-31-DE-E3-0F-09-9B-F6-F1-0B">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.Tasks.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.Tasks</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A2-07-C5-F2-94-B7-BC-2B-03-7F-78-37-37-25-ED-1D-23-D4-EE-21">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.InteropServices.RuntimeInformation.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.InteropServices.RuntimeInformation</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="39-63-51-E2-F5-13-BE-B5-80-5A-23-FD-5F-11-CF-B7-11-1D-1A-1F">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Linq.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9E-31-26-99-7D-45-F8-C2-E6-7E-F7-CB-99-C8-1B-D6-BC-20-96-8D">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Security.Cryptography.Encoding.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Security.Cryptography.Encoding</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="42-97-51-47-58-77-EC-55-DD-A5-E5-72-9F-44-14-5A-96-35-61-84">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Text.RegularExpressions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Text.RegularExpressions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="66-5F-55-7A-03-AF-5F-87-75-E2-B0-DD-F8-E3-83-0D-8F-10-DC-1A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Collections.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Collections</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E0-5F-1F-7C-6B-56-2F-49-DA-7F-E3-12-EF-A2-69-33-2D-D0-27-91">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Buffers.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.Buffers</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CF-35-24-0C-BE-CC-AC-91-C7-B5-F1-4F-19-FA-28-22-6E-CF-F2-D8">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.IO.FileSystem.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.IO.FileSystem</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="91-95-87-45-21-3A-58-EA-F7-ED-BF-51-99-BD-08-80-4F-BF-74-5A">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Memory.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Memory</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="11-54-AB-34-4F-06-FC-8E-25-8E-6B-FD-7D-7F-D3-9E-2E-2F-2C-F1">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Runtime.InteropServices.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Runtime.InteropServices</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="53-9D-74-D4-0E-2D-5E-BA-67-57-1D-7C-CC-9D-28-EC-B8-C4-39-52">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Console.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="42-E5-AF-53-A7-06-AC-6B-F2-CA-91-E3-BF-5B-F5-73-62-9E-6E-CF">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Diagnostics.Process.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Diagnostics.Process</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-A1-9C-96-64-88-FA-FE-33-5F-D7-EC-C4-20-49-54-10-1A-6C-AB">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.ComponentModel.Primitives.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:40Z</ModuleTime>
+      <ModuleName>System.ComponentModel.Primitives</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="0E-2D-AB-9E-A4-7C-1A-CA-36-58-B8-C5-26-4F-BC-EA-F2-00-12-CC">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.Build.Framework.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:08Z</ModuleTime>
+      <ModuleName>Microsoft.Build.Framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CD-8F-5B-CE-6A-F1-D3-EB-6A-E8-B6-BA-1F-91-89-22-DF-47-7A-7E">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Threading.ThreadPool.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Threading.ThreadPool</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="67-81-8C-54-98-D3-09-E0-2F-B9-71-C4-BD-3F-70-D4-04-49-41-04">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\netstandard.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>netstandard</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="E3-6E-9F-0E-40-85-D5-13-F5-A9-EE-2F-E7-00-78-A0-C5-27-B6-E9">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\Microsoft.Build.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:56:16Z</ModuleTime>
+      <ModuleName>Microsoft.Build</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="86-C2-C0-AC-0D-18-39-A6-27-59-AB-87-5C-B6-96-6B-B2-96-40-EE">
+      <ModulePath>C:\Program Files\dotnet\sdk\2.1.600-preview-009472\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll</ModulePath>
+      <ModuleTime>2019-01-10T17:54:02Z</ModuleTime>
+      <ModuleName>System.Text.Encoding.CodePages</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="47-3C-15-EF-D4-4B-47-B4-F1-27-E2-1D-4A-DE-33-73-67-EA-AD-C0">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Resources.ResourceManager.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:42Z</ModuleTime>
+      <ModuleName>System.Resources.ResourceManager</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F4-A9-21-6F-08-0A-C0-BB-5D-69-35-42-E2-D9-8A-37-20-4B-FB-6E">
+      <ModulePath>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8\System.Text.Encoding.Extensions.dll</ModulePath>
+      <ModuleTime>2019-01-17T19:51:44Z</ModuleTime>
+      <ModuleName>System.Text.Encoding.Extensions</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>
