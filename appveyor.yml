@@ -10,5 +10,5 @@ build:
   verbosity: minimal
 
 test_script:
-  - OpenCover.Console.exe -register:user -target:"C:\Program Files\dotnet\dotnet.exe" -targetargs:".\src\JValueMaskerTests\bin\Debug\netcoreapp2.1\JValueMaskerTests.dll -noshadow" -output:".\JValueMaskerTests_coverage.xml"
+  - OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console" -targetargs:".\src\JValueMaskerTests\bin\Debug\netcoreapp2.1\JValueMaskerTests.dll -noshadow" -filter:"+[JValueMaskter]* -[*Tests]*"  -output:".\JValueMaskerTests_coverage.xml"
   - codecov -f "JValueMaskerTests_coverage.xml
