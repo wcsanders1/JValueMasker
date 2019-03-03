@@ -37,7 +37,41 @@ namespace JValueMaskerTests.Unit
                 public string Password { get; set; }
             }
 
+            [Fact]
+            public void ReturnsNull_WhenProvidedNullJToken()
+            {
+                var result = MaskerUtility.Mask((JToken)null, new List<string>());
 
+                Assert.Null(result);
+            }
+
+            [Fact]
+            public void ReturnsJToken_WhenProvidedNullPropertiesToMask()
+            {
+                const string passwordVal = "badpassword123";
+
+                var jProp = new JProperty(PasswordProp, passwordVal);
+                var result = MaskerUtility.Mask(jProp, null);
+
+                Assert.NotNull(result);
+                Assert.IsType<JProperty>(result);
+                Assert.Equal(PasswordProp, result.Name);
+                Assert.Equal(passwordVal, result.Value);
+            }
+
+            [Fact]
+            public void ReturnsJToken_WhenProvidedEmptyPropertiesToMask()
+            {
+                const string passwordVal = "badpassword123";
+
+                var jProp = new JProperty(PasswordProp, passwordVal);
+                var result = MaskerUtility.Mask(jProp, new List<string>());
+
+                Assert.NotNull(result);
+                Assert.IsType<JProperty>(result);
+                Assert.Equal(PasswordProp, result.Name);
+                Assert.Equal(passwordVal, result.Value);
+            }
 
             [Fact]
             public void ReturnsMaskedValue_WhenValueShouldBeMasked()

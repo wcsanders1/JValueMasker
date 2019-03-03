@@ -22,6 +22,11 @@ namespace JValueMasker.Utilities
                 return null;
             }
 
+            if (propertiesToMask == null || propertiesToMask.Count == 0)
+            {
+                return jToken;
+            }
+
             if (jToken is JObject)
             {
                 var obj = jToken as JObject;
