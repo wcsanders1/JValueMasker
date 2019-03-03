@@ -1,4 +1,4 @@
-version: 0.1.6.{build}
+version: 0.1.7.{build}
 
 branches:
   only:
@@ -25,9 +25,6 @@ build:
 test_script:
   - dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" ./src/JValueMaskerTests/JValueMaskerTests.csproj
   - csmacnz.coveralls --opencover --useRelativePaths -i C:\projects\jvaluemasker\src\JValueMaskerTests\coverage.opencover.xml
-
-artifacts:
-  - path: '**\*.nupkg'
 
 deploy:
   provider: NuGet
