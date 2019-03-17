@@ -98,4 +98,4 @@ The above code will print the following:
 
 ## License
 
-[MIT](https://github.com/wcsanders1/JValueMasker/master/LICENSE)
+[MIT](https://github.com/wcsanders1/JValueMasker/blob/master/LICENSE)
