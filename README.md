@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1t90oa7mbj5cq33a?svg=true)](https://ci.appveyor.com/project/wcsanders1/jvaluemasker) [![Coverage Status](https://coveralls.io/repos/github/wcsanders1/JValueMasker/badge.svg?branch=master)](https://coveralls.io/github/wcsanders1/JValueMasker?branch=master) ![Nuget](https://img.shields.io/nuget/v/JValueMasker.svg) ![Nuget](https://img.shields.io/nuget/dt/JValueMasker.svg)
 
-A library offering an extension method on `JContainer` to mask values of elements with specified properties. This can be useful when you want to log a `JContainer` containing sensitive information, such as passwords. Note that this library does _not_ mutate the original `JContainer`; rather, it returns a new object with masked values.
+This is a library offering an extension method on `JContainer` to mask values of elements with specified properties. This can be useful when you want to log a `JContainer` containing sensitive information, such as passwords. Note that this library does _not_ mutate the original `JContainer`; rather, it returns a new object with masked values. However, if no values are provided to mask, then a reference to the `JContainer` is returned rather than a copy.
 
 Compatible with the following:
 
@@ -95,3 +95,7 @@ The above code will print the following:
   ]
 }
 ```
+
+## License
+
+[MIT](https://github.com/wcsanders1/JValueMasker/master/LICENSE)
